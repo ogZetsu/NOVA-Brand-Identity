@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #F8F4EC;
+  --foreground: #242424;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--font-sans), system-ui, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F8F4EC;
+}
+::-webkit-scrollbar-thumb {
+  background: #D3C2A5;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #242424;
+}
+
+/* Editorial font classes */
+.font-serif-editorial {
+  font-family: var(--font-serif), Georgia, serif;
+}
+
+/* Subtle cream card styling */
+.card-cream {
+  background: #ffffff;
+  border: 1px solid rgba(36, 36, 36, 0.08);
+  box-shadow: 0 4px 20px -4px rgba(36, 36, 36, 0.03);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.card-cream:hover {
+  border-color: rgba(36, 36, 36, 0.2);
+  box-shadow: 0 12px 32px -8px rgba(36, 36, 36, 0.08);
+}
+
+/* Dark contrast card styling */
+.card-dark {
+  background: #181818;
+  border: 1px solid rgba(248, 244, 236, 0.1);
+  color: #F8F4EC;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.card-dark:hover {
+  border-color: rgba(248, 244, 236, 0.25);
+}
+
+/* Smooth scroll behaviour */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Selection color */
+::selection {
+  background: #242424;
+  color: #F8F4EC;
+}
